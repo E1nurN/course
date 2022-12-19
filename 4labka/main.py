@@ -8,6 +8,8 @@ class Person:
 
 
 class Driver(Person):
+    drivingExperience: int
+
     def __init__(self, name: str, surname: str, patronymic: str, drivingExperience: int):
         self.name = name
         self.surname = surname
@@ -19,6 +21,9 @@ class Driver(Person):
 
 
 class Engine:
+    power: int
+    manufacturer: str
+    
     def __init__(self, power: int, manufacturer: str):
         self.power = power
         self.manufacturer = manufacturer
